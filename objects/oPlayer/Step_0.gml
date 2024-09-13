@@ -23,8 +23,14 @@ if !key_up && !key_down && !key_left && !key_right image_index = 0
 
 // horizontal movement
 spd = (key_right - key_left) * Mspd
-x += spd
+if place_meeting(x + spd, y, oCollision) {
+} else {
+	x += spd
+}
 
 // vertical movement
 spd = (key_down - key_up) * Mspd
-y += spd
+if place_meeting(x, y + spd, oCollision) {
+} else {
+	y += spd
+}
