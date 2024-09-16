@@ -1,6 +1,9 @@
 // setting up movement variables
 spd = 0 // current velocity
-Mspd = 2; // walking movement speed
+
+Bspd = 1; // base speed (update)
+Sspd = 2; // sprinting speed
+Wspd = 1; // walking movement speed
 
 sprite_index = sPlayerRunF // assigning sprite
 
