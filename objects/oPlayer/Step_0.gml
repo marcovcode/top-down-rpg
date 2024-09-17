@@ -1,3 +1,4 @@
+
 // setting up controls
 if rolling = false {
 	key_up = keyboard_check(ord("W")) // up movement
@@ -8,9 +9,13 @@ if rolling = false {
 	key_roll = keyboard_check_pressed(vk_space) // roll
 }
 
+// replenishing stamina
+if staminaCur < staminaMax && !rolling && !key_sprint staminaCur += staminaReplenish
+
 // dodge roll
-if !rolling and key_roll {
+if !rolling and key_roll && staminaCur >= staminaRoll {
 	rolling = true
+	staminaCur += -staminaRoll
 	rollDir = point_direction(x, y, mouse_x, mouse_y)
 	Bspd = Rspd
 	
@@ -50,7 +55,8 @@ if !rolling {
 if !rolling && !key_up && !key_down && !key_left && !key_right image_index = 0
 
 if rolling = false {
-	if key_sprint {
+	if key_sprint && staminaCur >= staminaSprint {
+		staminaCur += -staminaSprint
 		Bspd = Sspd
 	} else {
 		Bspd = Wspd

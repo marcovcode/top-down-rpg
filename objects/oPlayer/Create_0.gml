@@ -13,3 +13,13 @@ dirY = 1 // vertical direction
 
 rolling = false;
 rollDir = 0;
+
+// stats
+staminaReplenish = 0.25;
+staminaMax = 100
+staminaCur = staminaMax
+staminaSprint = 0.5;
+staminaRoll = 20;
+
+// ui
+UIScale = 4;
