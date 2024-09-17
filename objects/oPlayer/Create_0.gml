@@ -11,8 +11,13 @@ sprite_index = sPlayerRunF // assigning sprite
 dirX = 1 // horizontal diretion
 dirY = 1 // vertical direction
 
+// rolling
 rolling = false;
 rollDir = 0;
+
+// bow
+chargingBow = false
+bowDir = 0
 
 // stats
 staminaReplenish = 0.25;

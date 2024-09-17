@@ -1,12 +1,38 @@
 
 // setting up controls
-if rolling = false {
+if rolling = false || chargingBow = false {
 	key_up = keyboard_check(ord("W")) // up movement
 	key_down = keyboard_check(ord("S")) // down movement
 	key_left = keyboard_check(ord("A")) // left movement
 	key_right = keyboard_check(ord("D")) // right movement
 	key_sprint = keyboard_check(vk_shift) // sprint
 	key_roll = keyboard_check_pressed(vk_space) // roll
+
+	key_charge = mouse_check_button_pressed(mb_left) // charging
+}
+
+key_shoot = mouse_check_button_released(mb_left) // shooting
+
+// bow attacking
+if key_charge {
+	chargingBow = true
+}
+
+// aiming
+if chargingBow = true {
+	bowDir = point_direction(x, y, mouse_x, mouse_y)
+
+	if y < mouse_y { sprite_index = sPlayerBowChargeF; dirY = 1 }
+	else { sprite_index = sPlayerBowChargeB; dirY = -1 }
+
+	if x < mouse_x { image_xscale = 1; dirX = 1 }
+	else { image_xscale = -1; dirX = -1 }
+}
+
+// shooting
+if key_shoot {
+	instance_create_layer(x, y, "Instances", oArrow)
+	chargingBow = false
 }
 
 // replenishing stamina
@@ -21,7 +47,7 @@ if !rolling and key_roll && staminaCur >= staminaRoll {
 	
 	if y < mouse_y { sprite_index = sPlayerRollF; dirY = 1 }
 	else { sprite_index = sPlayerRollB; dirY = -1 }
-	
+
 	if x < mouse_x { image_xscale = 1; dirX = 1 }
 	else { image_xscale = -1; dirX = -1 }
 }

@@ -38,6 +38,7 @@
   },
   "name":"top-down-rpg",
   "resources":[
+    {"id":{"name":"oArrow","path":"objects/oArrow/oArrow.yy",},},
     {"id":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
