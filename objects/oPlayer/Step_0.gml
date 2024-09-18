@@ -1,4 +1,3 @@
-
 // setting up controls
 if rolling = false || chargingBow = false {
 	key_up = keyboard_check(ord("W")) // up movement
