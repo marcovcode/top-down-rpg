@@ -20,6 +20,8 @@ chargingBow = false
 bowDir = 0
 
 // stats
+HPMax = 6
+HPCur = 2
 staminaReplenish = 0.25;
 staminaMax = 100
 staminaCur = staminaMax
