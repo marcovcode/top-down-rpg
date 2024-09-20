@@ -42,6 +42,7 @@
     {"id":{"name":"oBat","path":"objects/oBat/oBat.yy",},},
     {"id":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
+    {"id":{"name":"oSlime","path":"objects/oSlime/oSlime.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sArrow","path":"sprites/sArrow/sArrow.yy",},},
     {"id":{"name":"sBatHard","path":"sprites/sBatHard/sBatHard.yy",},},
