@@ -25,7 +25,22 @@ if instance_exists(oPlayer) {
 	}
 
 	// chase
-	move_towards_point(oPlayer.x, oPlayer.y, _speed)
+	dir = point_direction(x, y, oPlayer.x, oPlayer.y) // direction
+	
+	// horizontal movement
+	speed_current = lengthdir_x(_speed, dir)
+	if place_meeting(x + speed_current, y, oCollision) {
+	} else {
+		x += speed_current
+	}
+
+	// vertical movement
+	speed_current = lengthdir_y(_speed, dir)
+
+	if place_meeting(x, y + speed_current, oCollision) {
+	} else {
+		y += speed_current
+	}
 
 	if distance_to_object(oPlayer) <= chase_range_start chase = true
 	if distance_to_object(oPlayer) >= chase_range_stop {

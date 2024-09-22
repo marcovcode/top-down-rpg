@@ -7,6 +7,8 @@ damage = 2
 
 // movement
 _speed = 0
+speed_current = 0
+dir = 0
 speed_base = 1.5
 chase_range_start = 100
 chase_range_stop =  120
