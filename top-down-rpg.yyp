@@ -40,6 +40,7 @@
   "resources":[
     {"id":{"name":"oArrow","path":"objects/oArrow/oArrow.yy",},},
     {"id":{"name":"oBat","path":"objects/oBat/oBat.yy",},},
+    {"id":{"name":"oBatHard","path":"objects/oBatHard/oBatHard.yy",},},
     {"id":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oSlime","path":"objects/oSlime/oSlime.yy",},},
