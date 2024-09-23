@@ -28,6 +28,11 @@ staminaCur = staminaMax
 staminaSprint = 0.5;
 staminaRoll = 20;
 
+// items
+itemGold = 0
+itemArrow = 0
+itemKey = 0
+
 // damage & death
 hit = false
 alphaGain = 0.005
