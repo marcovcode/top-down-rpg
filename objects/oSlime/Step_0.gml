@@ -1,3 +1,5 @@
+depth = -y
+
 if instance_exists(oPlayer) {
 	// allow jumping
 	if !jump {
