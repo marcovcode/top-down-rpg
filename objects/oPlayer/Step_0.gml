@@ -30,7 +30,11 @@ if chargingBow = true {
 
 // shooting
 if key_shoot {
-	instance_create_layer(x, y, "Instances", oArrow)
+	if itemArrow >= 1 {
+		instance_create_layer(x, y, "Instances", oArrow)
+		itemArrow -= 1
+	}
+	
 	chargingBow = false
 }
 

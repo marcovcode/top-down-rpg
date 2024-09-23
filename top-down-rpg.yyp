@@ -43,6 +43,7 @@
     {"id":{"name":"oBatHard","path":"objects/oBatHard/oBatHard.yy",},},
     {"id":{"name":"oChest","path":"objects/oChest/oChest.yy",},},
     {"id":{"name":"oCollision","path":"objects/oCollision/oCollision.yy",},},
+    {"id":{"name":"oDoor","path":"objects/oDoor/oDoor.yy",},},
     {"id":{"name":"oItem","path":"objects/oItem/oItem.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oSlime","path":"objects/oSlime/oSlime.yy",},},
