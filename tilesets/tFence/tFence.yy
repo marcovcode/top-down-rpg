@@ -21,7 +21,7 @@
     "name":"sTileFence",
     "path":"sprites/sTileFence/sTileFence.yy",
   },
-  "spriteNoExport":true,
+  "spriteNoExport":false,
   "textureGroupId":{
     "name":"Default",
     "path":"texturegroups/Default",
