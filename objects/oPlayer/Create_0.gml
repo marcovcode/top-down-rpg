@@ -20,8 +20,7 @@ chargingBow = false
 bowDir = 0
 
 // stats
-HPMax = 6
-HPCur = HPMax
+HPCur = global.HPCur
 staminaReplenish = 0.25;
 staminaMax = 100
 staminaCur = staminaMax
@@ -29,9 +28,9 @@ staminaSprint = 0.5;
 staminaRoll = 20;
 
 // items
-itemGold = 0
-itemArrow = 0
-itemKey = 0
+itemGold = global.itemGold
+itemArrow = global.itemArrow
+itemKey = global.itemKey
 
 // damage & death
 hit = false
