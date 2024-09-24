@@ -47,7 +47,9 @@
     {"id":{"name":"oItem","path":"objects/oItem/oItem.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"oSlime","path":"objects/oSlime/oSlime.yy",},},
+    {"id":{"name":"oTransition","path":"objects/oTransition/oTransition.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"sArrow","path":"sprites/sArrow/sArrow.yy",},},
     {"id":{"name":"sBatHard","path":"sprites/sBatHard/sBatHard.yy",},},
     {"id":{"name":"sBatNormal","path":"sprites/sBatNormal/sBatNormal.yy",},},
@@ -91,6 +93,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
