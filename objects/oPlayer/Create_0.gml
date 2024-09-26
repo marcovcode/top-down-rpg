@@ -38,9 +38,11 @@ alphaGain = 0.005
 death = false
 
 // ui
-UIScale = 4;
+UIScale = global.UIScale;
 
 // dialogue
 readText = ""
 signRead = false
 interactRange = 22
+
+instance_create_layer(x, y, "Instances", oPause)
