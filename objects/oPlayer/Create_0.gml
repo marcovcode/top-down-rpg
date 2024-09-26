@@ -39,3 +39,8 @@ death = false
 
 // ui
 UIScale = 4;
+
+// dialogue
+readText = ""
+signRead = false
+interactRange = 22

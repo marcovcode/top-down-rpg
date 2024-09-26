@@ -1,0 +1,1 @@
+dialogueText = "This is a test example of a something\n\nyou could find in a video game."
